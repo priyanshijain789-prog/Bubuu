@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Birthday, Bubuu ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500&family=Caveat:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070707;--ink:#f3ece0;--dim:#b9ae9d;--gold:#d8bf8f;--blush:#e8909f;--glass:#ffffff10;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070707}}
+:root[data-theme="dark"]{--bg:#070707}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(ellipse at 50% 0,#1a1416,var(--bg) 60%);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-weight:300;overflow-x:hidden}
+body:after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E")}
+#stars{position:fixed;inset:0;width:100%;height:100%;z-index:0}
+section{position:relative;z-index:1;min-height:100vh;min-height:100svh;padding:80px 22px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+h1,h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;margin:0 0 .5em;line-height:1.15}
+h1{font-size:clamp(2.4rem,9vw,4.6rem);text-shadow:0 0 30px #d8bf8f66;animation:glow 4s ease-in-out infinite}
+h2{font-size:clamp(1.7rem,6vw,2.6rem);color:var(--gold)}
+@keyframes glow{50%{text-shadow:0 0 50px #d8bf8fbb}}
+p{line-height:1.8;color:var(--dim)}
+.btn{font:500 1rem Inter,sans-serif;color:var(--ink);background:var(--glass);border:1px solid #d8bf8f88;border-radius:999px;padding:16px 34px;min-height:52px;cursor:pointer;backdrop-filter:blur(8px);transition:.3s;margin:8px}
+.btn:hover,.btn:active{box-shadow:0 0 30px #d8bf8f66;background:#d8bf8f22}
+.yes{background:var(--blush);color:#1a0a0e;border:0;font-weight:500}
+.rv{opacity:0;transform:translateY(30px);transition:opacity 1s,transform 1s}.rv.on{opacity:1;transform:none}
+.paper{max-width:560px;width:100%;background:linear-gradient(160deg,#17130f,#0e0c0a);border:1px solid #d8bf8f44;border-radius:6px;padding:34px 26px;text-align:left;box-shadow:0 0 60px #d8bf8f18,0 20px 50px #000}
+.tw{white-space:pre-wrap;line-height:1.9;font-size:1.02rem;color:var(--ink);min-height:6em}
+.sig{font-family:Caveat,cursive;font-size:1.7rem;color:var(--blush);text-align:right;opacity:0;transition:1.5s;margin:14px 0 0}.sig.on{opacity:1}
+.wall{max-width:420px;width:100%}
+.pol{background:#f2ece1;color:#2a241c;padding:12px 12px 16px;margin:0 auto 46px;max-width:320px;transform:rotate(var(--r,0deg));box-shadow:0 18px 40px #000c;position:relative;transition:transform .4s}
+.pol:hover{transform:rotate(0) scale(1.04)}
+.pol:before{content:"";position:absolute;top:-12px;left:50%;width:90px;height:26px;margin-left:-45px;background:#d8bf8f88;transform:rotate(var(--t,-3deg))}
+.ph{aspect-ratio:4/5;background:repeating-linear-gradient(45deg,#d8d0c0,#d8d0c0 10px,#cfc6b4 10px,#cfc6b4 20px);display:flex;align-items:center;justify-content:center;font-size:.78rem;color:#6b604e;padding:10px}
+.pol img{width:100%;height:auto;display:block}
+.pol b{display:block;font-family:'Cormorant Garamond',serif;font-size:1.25rem;margin-top:12px}
+.pol i{display:block;font-family:Caveat,cursive;font-style:normal;font-size:1.3rem;color:#5a4a36;margin-top:4px;line-height:1.2}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:560px;width:100%}
+.fc{perspective:900px;height:130px;cursor:pointer}
+.in{position:relative;width:100%;height:100%;transition:transform .8s cubic-bezier(.4,.2,.2,1);transform-style:preserve-3d}
+.fc.f .in{transform:rotateY(180deg)}
+.fc div div{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:14px;border:1px solid #d8bf8f55;background:var(--glass);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:10px;font-family:'Cormorant Garamond',serif;font-size:1.15rem;line-height:1.25}
+.fc .bk{transform:rotateY(180deg);background:#d8bf8f1c;color:var(--gold)}
+.fc .fr{color:var(--dim);font-size:1.7rem}
+#ov{position:fixed;inset:0;z-index:40;background:#000e;display:none;flex-direction:column;align-items:center;justify-content:center;padding:30px;text-align:center}
+#ov p{font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,5vw,2.1rem);color:var(--ink);opacity:0;transition:2s;margin:.4em 0}#ov p.on{opacity:1}
+.fade{opacity:0;transition:1.6s;margin:.3em 0}.fade.on{opacity:1}
+#no{transition:left .3s,top .3s,transform .3s,opacity .3s}
+#nomsg{min-height:2em;color:var(--blush);margin-top:14px}
+.card{border:1px solid #d8bf8f77;border-radius:18px;padding:28px 34px;background:var(--glass);backdrop-filter:blur(8px);animation:glow2 3s infinite;margin:18px 0}
+@keyframes glow2{50%{box-shadow:0 0 40px #e8909f55}}
+.h,.cf{position:fixed;pointer-events:none;z-index:45}
+.h{bottom:-30px;color:var(--blush);opacity:.5;animation:up linear forwards}
+@keyframes up{to{transform:translateY(-115vh);opacity:0}}
+.cf{left:50%;top:50%;animation:fly 1.8s ease-out forwards}
+@keyframes fly{to{transform:translate(var(--dx),var(--dy)) scale(.3);opacity:0}}
+#mus{position:fixed;top:calc(env(safe-area-inset-top,0px) + 10px);right:10px;z-index:60;padding:10px 16px;min-height:44px;font-size:.85rem;margin:0}
+</style></head><body>
+<canvas id="stars"></canvas>
+<button class="btn" id="mus">♫ Play our song</button>
+<audio id="aud" loop></audio>
+
+<section id="hero">
+<h1 id="t1"></h1><p id="t2" style="font-size:1.1rem"></p>
+<button class="btn" id="open">Open Your Surprise ✨</button>
+</section>
+
+<section id="letter"><h2>A little letter for you...</h2>
+<div class="paper"><div class="tw" id="ltw"></div><p class="sig" id="lsig"></p></div></section>
+
+<section id="mem"><h2 id="mh"></h2><div class="wall" id="memw"></div></section>
+
+<section id="why"><h2>Things I love about you...</h2><p>Tap each card ✨</p><div class="grid" id="grid"></div></section>
+
+<section id="gal"><h2>Us, in little pieces ❤️</h2><div class="wall" id="galw"></div></section>
+
+<section id="msg"><h2>A Little Something From Billu ❤️</h2>
+<div class="paper"><div class="tw" id="mtw"></div><p class="sig" id="msig"></p></div></section>
+
+<section id="sur"><button class="btn" id="sbtn" style="font-size:1.2rem;animation:glow2 3s infinite">One Last Surprise ✨</button></section>
+<div id="ov"><div id="ovt"></div><button class="btn" id="cont" style="opacity:0;transition:2s">Continue →</button></div>
+
+<section id="fin">
+<div id="q1" class="fade"></div><div id="q2" class="fade"></div>
+<h1 id="q3" class="fade" style="font-size:clamp(2rem,7vw,3.4rem)"></h1>
+<div id="btns" class="fade"><button class="btn yes" id="yes">YES ❤️</button><button class="btn" id="no">NO 🙈</button></div>
+<div id="nomsg"></div>
+<div id="win" style="display:none"><h1 id="w1"></h1><div class="card"><div style="font-size:3rem">🍽️</div><h2 id="w2" style="margin:.2em 0"></h2><p id="w3" style="margin:0"></p></div></div>
+<div id="end" style="display:none"><h1 id="e1" class="fade"></h1><p id="e2" class="fade" style="font-size:1.2rem"></p><p id="e3" class="fade" style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--gold)"></p></div>
+</section>
+
+<script>
+/* ============ ✏️ EDIT EVERYTHING HERE ============ */
+const CFG={
+ him:"Bubuu", me:"Billu",
+ music:"",                       // put your song file name/URL here, e.g. "our-song.mp3"
+ openSub:"From your Billu, with all my love.",
+ letter:"Dear Bubuu,\n\nToday is all about celebrating the most adorable, annoying, funny, lovable, and special person in my life.\n\nThank you for making me laugh, for making weird faces with me, for dancing with me, for annoying me every chance you get, and for filling my life with memories I never want to forget.\n\nThis little website is my way of wrapping all my love into something you can keep forever.\n\nHappy Birthday, my love ❤️",
+ // img: put a photo URL/filename here to replace the placeholder. "file" is the suggested name.
+ memories:[
+  {ic:"📍",t:"Raasta Cafe",c:"The place where some of our favorite memories began.",file:"raasta-cafe.jpg",img:""},
+  {ic:"🥘",t:"Paratha Dates",c:"No fancy dinners can beat eating parathas together.",file:"paratha-date.jpg",img:""},
+  {ic:"😂",t:"Weird Face Championship",c:"Our hidden talent: making the ugliest faces possible.",file:"weird-faces.jpg",img:""},
+  {ic:"😤",t:"Tickle Monster",c:"You never miss a chance to annoy me by tickling me.",file:"tickle.jpg",img:""},
+  {ic:"🤣",t:"Your Weird Habit",c:"Licking my face, hands, and even my legs should honestly be illegal.",file:"weird-habit.jpg",img:""},
+  {ic:"💃",t:"Dancing Together",c:"No audience required. Just us.",file:"dance.jpg",img:""},
+  {ic:"🥋",t:"Karate Time",c:"Half romance. Half WWE.",file:"karate.jpg",img:""},
+  {ic:"🎵",t:"Punjabi Song Vibes",c:"Our concerts happen wherever the music starts.",file:"punjabi-vibes.jpg",img:""}],
+ reasons:["Your smile","Your craziness","The way you make me laugh","The way you care","Your hugs","Your goofiness","Your loyalty","The way you make ordinary days special","Your ability to annoy me and still be loved","Simply because you're you"],
+ gallery:[
+  {cap:"our favourite Us",file:"favorite-memory.jpg",img:""},
+  {cap:"pure chaos",file:"gallery-2.jpg",img:""},
+  {cap:"my happy place",file:"gallery-3.jpg",img:""},
+  {cap:"you + me",file:"gallery-4.jpg",img:""}],
+ message:"[Billu will write her personal birthday message here]\n\nYou can write many paragraphs, add emojis 💌 and line breaks. Just replace this text.",
+ surprise:["No matter how many birthdays come and go...","You'll always be my Bubuu.","And I'll always be your Billu. ❤️"],
+ ask1:"Now that you've reached the end...", ask2:"But there's one more thing...", ask:"Will you go out for dinner with me? ❤️",
+ noMsgs:["Nice try 😏","That button is unavailable today 😂","Are you really trying to say no to Billu? 🙈","Bubuu, stop being naughty ❤️","The answer is clearly yes 😌","Wrong button, mister 😂","Try again... if you dare 😏"],
+ yes1:"YAYYYYY ❤️", yes2:"Dinner Date Confirmed 🍽️❤️", yes3:"Best birthday decision ever.",
+ end1:"I love you, Bubuu ❤️", end2:"Thank you for being my favorite person.", end3:"Forever yours,<br>Billu ❤️"
+};
+/* ================================================= */
+const $=id=>document.getElementById(id),wait=ms=>new Promise(r=>setTimeout(r,ms));
+$('t1').textContent="Happy Birthday, "+CFG.him+" ❤️";$('t2').textContent=CFG.openSub;
+$('mh').textContent="Little moments that became our memories ❤️";
+function pol(o,i,cap){const r=((i*7)%9-4)+"deg";const im=o.img?`<img src="${o.img}" alt="${o.t||o.cap}" loading="lazy">`:`<div class="ph">📷 add photo<br>${o.file}</div>`;
+ return `<div class="pol rv" style="--r:${r};--t:${(i%2?3:-4)}deg">${im}${cap}</div>`}
+$('memw').innerHTML=CFG.memories.map((m,i)=>pol(m,i,`<b>${m.ic} ${m.t}</b><i>${m.c}</i>`)).join("");
+$('galw').innerHTML=CFG.gallery.map((m,i)=>pol(m,i+3,`<i>${m.cap}</i>`)).join("");
+$('grid').innerHTML=CFG.reasons.map((r,i)=>`<div class="fc rv"><div class="in"><div class="fr">${String(i+1).padStart(2,"0")} ✦</div><div class="bk">❤️ ${r}</div></div></div>`).join("");
+document.querySelectorAll('.fc').forEach(c=>c.onclick=()=>{c.classList.toggle('f');if(c.classList.contains('f'))burst(6,c.getBoundingClientRect(),"✦")});
+/* reveal on scroll */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+/* typewriter */
+async function type(el,txt,sig,sg){for(const ch of txt){el.textContent+=ch;await wait(ch=="\n"?250:28)}sig.textContent=sg;sig.classList.add('on')}
+function onSee(id,fn){const o=new IntersectionObserver(e=>{if(e[0].isIntersecting){o.disconnect();fn()}},{threshold:.3});o.observe($(id))}
+onSee('letter',()=>type($('ltw'),CFG.letter,$('lsig'),"— Your "+CFG.me+" ❤️"));
+onSee('msg',()=>type($('mtw'),CFG.message,$('msig'),"Written with lots of love by "+CFG.me+" ❤️"));
+$('open').onclick=()=>{hearts(12);setTimeout(()=>$('letter').scrollIntoView({behavior:'smooth'}),500)};
+/* surprise */
+$('sbtn').onclick=async()=>{const ov=$('ov');ov.style.display='flex';$('ovt').innerHTML=CFG.surprise.map(s=>`<p>${s}</p>`).join("");hearts(14);
+ const ps=[...ov.querySelectorAll('p')];for(const p of ps){await wait(1400);p.classList.add('on')}await wait(1600);$('cont').style.opacity=1};
+$('cont').onclick=()=>{$('ov').style.display='none';$('fin').scrollIntoView({behavior:'smooth'})};
+/* finale */
+onSee('fin',async()=>{$('q1').textContent=CFG.ask1;$('q2').textContent=CFG.ask2;$('q3').textContent=CFG.ask;
+ $('q1').classList.add('on');await wait(1900);$('q2').classList.add('on');await wait(1900);$('q3').classList.add('on');await wait(1200);$('btns').classList.add('on')});
+let tries=0;const no=$('no');
+function dodge(e){if(e&&e.cancelable)e.preventDefault();tries++;
+ if(tries>=9){no.style.opacity=0;no.style.pointerEvents='none';$('nomsg').textContent="Okay okay, the NO button has left the chat 😂";return}
+ no.style.position='fixed';no.style.margin='0';const s=Math.max(.45,1-tries*.08);no.style.transform='scale('+s+')';
+ const w=no.offsetWidth,h=no.offsetHeight,m=14,vw=innerWidth,vh=innerHeight;
+ no.style.left=(m+Math.random()*(vw-w-2*m))+'px';no.style.top=(70+Math.random()*(vh-h-84))+'px';
+ $('nomsg').textContent=CFG.noMsgs[(tries-1)%CFG.noMsgs.length]}
+['mouseenter','touchstart','click'].forEach(ev=>no.addEventListener(ev,dodge,{passive:false}));
+$('yes').onclick=async()=>{$('btns').style.display='none';$('nomsg').style.display='none';['q1','q2','q3'].forEach(i=>$(i).style.display='none');
+ no.style.display='none';$('win').style.display='block';$('w1').textContent=CFG.yes1;$('w2').textContent=CFG.yes2;$('w3').textContent=CFG.yes3;
+ document.body.style.boxShadow='inset 0 0 120px #e8909f55';
+ const R=()=>({left:innerWidth/2,top:innerHeight/2,width:0,height:0});burst(50,R(),"❤️");hearts(25);
+ for(let i=0;i<5;i++){await wait(500);const x=innerWidth*(.2+Math.random()*.6),y=innerHeight*(.2+Math.random()*.4);burst(16,{left:x,top:y,width:0,height:0},"✦")}
+ await wait(3000);$('win').style.display='none';$('end').style.display='block';
+ $('e1').textContent=CFG.end1;$('e2').textContent=CFG.end2;$('e3').innerHTML=CFG.end3;
+ for(const i of['e1','e2','e3']){await wait(200);$(i).classList.add('on');await wait(2200)}};
+/* effects */
+function burst(n,rect,ch){for(let i=0;i<n;i++){const e=document.createElement('span');e.className='cf';e.textContent=ch;
+ e.style.left=(rect.left+rect.width/2)+'px';e.style.top=(rect.top+rect.height/2)+'px';const a=Math.random()*6.28,d=60+Math.random()*180;
+ e.style.setProperty('--dx',Math.cos(a)*d+'px');e.style.setProperty('--dy',Math.sin(a)*d+'px');e.style.fontSize=(12+Math.random()*16)+'px';e.style.color=Math.random()>.5?'#d8bf8f':'#e8909f';
+ document.body.appendChild(e);setTimeout(()=>e.remove(),1900)}}
+function hearts(n){for(let i=0;i<n;i++)setTimeout(()=>{const e=document.createElement('div');e.className='h';e.textContent='♥';e.style.left=Math.random()*100+'vw';
+ e.style.fontSize=(10+Math.random()*14)+'px';e.style.animationDuration=(6+Math.random()*5)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),11500)},i*150)}
+setInterval(()=>{if(!document.hidden)hearts(1)},2200);
+/* stars */
+const cv=$('stars'),cx=cv.getContext('2d');let S=[];
+function rs(){cv.width=innerWidth;cv.height=innerHeight;S=Array.from({length:innerWidth<600?60:110},()=>({x:Math.random()*cv.width,y:Math.random()*cv.height,r:Math.random()*1.2+.2,v:Math.random()*.15+.03,p:Math.random()*6}))}
+rs();addEventListener('resize',rs);
+(function f(t){cx.clearRect(0,0,cv.width,cv.height);for(const s of S){s.y-=s.v;if(s.y<0)s.y=cv.height;cx.globalAlpha=.4+.5*Math.sin(t/900+s.p);cx.fillStyle='#f3ece0';cx.beginPath();cx.arc(s.x,s.y,s.r,0,6.3);cx.fill()}requestAnimationFrame(f)})(0);
+/* music */
+const au=$('aud'),mb=$('mus');mb.onclick=()=>{if(!CFG.music){mb.textContent="Add your song in CFG.music";return}
+ if(!au.src)au.src=CFG.music;if(au.paused){au.play().catch(()=>{});mb.textContent="♫ Pause"}else{au.pause();mb.textContent="♫ Play our song"}};
+</script></body></html>
