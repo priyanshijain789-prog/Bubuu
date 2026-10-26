@@ -3,7 +3,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Happy Birthday, Bubuu ❤️</title>
 <!-- WhatsApp / social preview. If your link changes (Netlify / custom domain), replace the address in og:url and og:image below. -->
-<meta name="description" content="I made something just for you ✨">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Happy Birthday, Bubuu ❤️">
 <meta property="og:description" content="I made something just for you… open it ✨">
@@ -105,7 +104,7 @@ const PH=["data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBw
 /* ============ ✏️ EDIT EVERYTHING HERE ============ */
 const CFG={
  him:"Bubuu", me:"Billu",
- music:"",                       // put your song file name/URL here, e.g. "our-song.mp3"
+ music:"our-song.mp3",            // upload your mp3 to the same folder with exactly this name
  openSub:"From your Billu, with all my love.",
  letter:"Happy Birthday, mere Bubu! ♥️🥺🧿\n\nThank you for coming into my life and making it so beautiful. You are my everything, Bubu. I genuinely can’t imagine my life without you. 🫶🏻\n\nSince day one, you have always taken care of me, chahe hum relationship mein the ya nhi. You have always been there for me, loving me, pampering me, and making sure I am okay. And honestly that’s one of the things I love the most about you. 🥹❤️\nMera dil pighal jaata hai jab aap mujhe itne pyaar se pamper karte ho. Mera rona, hasna, khelna, mera pagalpan, meri zidd, mera gussa, aap sab kuch kitne pyaar se sambhaal lete ho. You treat me like your little baby and with you, I never feel like I have to hide any part of myself. I can be my most childish, emotional, and pagal because I know you will still hold me close and love me the same. ♥️😭🫂\n\nItna dhyaan toh shayad maine aaj tak khud ka bhi nahi rakha jitna aap mera rakhte ho. Meri ek choti si smile ke liye aap kitna kuch kar jaate ho and the way you sometimes put my happiness before your own makes me feel so loved. I notice all those little things you do for me Bubu. They mean more to me than I can ever explain. 🥺❤️\n\nMujhe pta hai main aapko bahut pareshan karti hu irritate bhi kar deti hu..kabhi zidd karti hu toh kabhi bina baat ke gussa ho jaati hu. 😭 But despite all of that you have always chosen me,stood by me and made me feel like I’m worth loving even on my difficult days. And Bubu I hope I can love you in a way that makes you feel just as safe, special and cared for as you make me feel. 🧿\n\nAap hamesha khush raho life mein grow karo aur apne saare dreams achieve karo. ❤️ Main har phase mein apke saath rehna chahti hu, chahe sab accha ho ya difficult. Aap kabhi akela feel na karo bas main bhi apka waise hi sukoon, comfort aur ghr banna chahti hoon, just like you have been mine. 🫶🏻❤️\n\nNo matter what life brings, I want you to know that I’m always rooting for you, always proud of you, and always here for you Bubu. You mean so much more to me than these words could ever express. You’re not just someone I love; you are the person I want to share my little everyday moments, my biggest dreams, my silly fights, my happiest memories, and my entire future with. 🥹💗\n\nAnd ab ek baat puchni hai aapse mere Bubu… 🥺👉🏻👈🏻❤️\n\nMujhse shaadi karoge? 🥺💍 Apni dulhan bana lo na. I want to spend my life being your little baby, annoying you over the smallest things, fighting with you over silly reasons, making up with endless hugs, holding your hand through every high and low and growing old with you. I want a life where I get to wake up next to you, call you mine, and love you a little more with every passing day. 😭❤️🧿\n\nHappy Birthday once again, my love, my Bubu, my favourite person. And one day, I will celebrate your birthdays as your wife, standing beside you, holding your hand, and reminding you every single day how deeply you are loved. 🥹💋❤️\nI love you so, so much, mere Bubu. Aaj bhi, kal bhi, aur har aane wale kal mein. ♥️🧿🫂💍",
  // memories are text only. Photos go in the gallery below (img: put a photo URL/filename; "file" is the suggested name).
@@ -152,7 +151,7 @@ const nb={};for(const k in flow){const b=document.createElement('button');b.clas
 async function type(el,txt,sig,sg){let skip=false;el.parentElement.onclick=()=>skip=true;const d=txt.length>800?38:55;let i=0;for(const ch of txt){if(skip){el.textContent=txt;break}el.textContent+=ch;await wait(ch=="\n"?(txt.length>800?600:350):d)}sig.textContent=sg;sig.classList.add('on')}
 function onSee(id,fn){const o=new IntersectionObserver(e=>{if(e[0].isIntersecting){o.disconnect();fn()}},{threshold:.3});o.observe($(id))}
 $('env').onclick=async()=>{$('env').style.display='none';$('lpap').style.display='';hearts(8);await type($('ltw'),CFG.letter,$('lsig'),"— Your "+CFG.me+" ❤️");nb.letter.style.display=''};
-$('open').onclick=()=>{hearts(12);if(CFG.music&&au.paused)mb.onclick();setTimeout(()=>reveal('letter'),400)};
+$('open').onclick=()=>{hearts(12);try{if(CFG.music&&au.paused)mb.onclick()}catch(e){}setTimeout(()=>reveal('letter'),400)};
 /* surprise */
 $('sbtn').onclick=async()=>{const ov=$('ov');ov.style.display='flex';$('ovt').innerHTML=CFG.surprise.map(s=>`<p>${s}</p>`).join("");hearts(14);
  const ps=[...ov.querySelectorAll('p')];for(const p of ps){await wait(1400);p.classList.add('on')}await wait(1600);$('cont').style.opacity=1};
@@ -190,6 +189,8 @@ function rs(){cv.width=innerWidth;cv.height=innerHeight;S=Array.from({length:inn
 rs();addEventListener('resize',rs);
 (function f(t){cx.clearRect(0,0,cv.width,cv.height);for(const s of S){s.y-=s.v;if(s.y<0)s.y=cv.height;cx.globalAlpha=.4+.5*Math.sin(t/900+s.p);cx.fillStyle='#f3ece0';cx.beginPath();cx.arc(s.x,s.y,s.r,0,6.3);cx.fill()}requestAnimationFrame(f)})(0);
 /* music */
-const au=$('aud'),mb=$('mus');if(!CFG.music)mb.style.display='none';mb.onclick=()=>{if(!CFG.music){mb.textContent="Add your song in CFG.music";return}
- if(!au.src)au.src=CFG.music;if(au.paused){au.play().catch(()=>{});mb.textContent="♫ Pause"}else{au.pause();mb.textContent="♫ Play our song"}};
+const au=$('aud'),mb=$('mus');if(!CFG.music)mb.style.display='none';au.preload='auto';const setP=on=>{mb.textContent=on?"♫ Pause":"♫ Play our song"};
+au.onerror=()=>{mb.textContent="♫ song not found"};au.onplay=()=>setP(true);au.onpause=()=>setP(false);
+mb.onclick=()=>{if(!CFG.music)return;if(!au.src){try{au.src=new URL(CFG.music,location.href).href}catch(e){au.src=CFG.music}}
+ if(au.paused){const p=au.play();if(p)p.catch(()=>setP(false))}else au.pause()};
 </script></body></html>
